@@ -9,6 +9,11 @@
 import Foundation
 import UIKit
 
+open class _ShowcaseBase: NSObject {
+    public required override init() {
+        super.init()
+    }
+}
 /**
  A typealias combining `_ShowcaseIdentity` and `_ShowcaseRequirements`.
  Showcases implementations **must** add conformance to `Showcasable`
@@ -18,7 +23,7 @@ import UIKit
  with `@objc`, it was not possible to provide a default implementation
  for `static var title: String` or reference Swift only types like `ShowcasePath`.
  */
-public typealias Showcase = NSObject & _ShowcaseIdentity & _ShowcaseRequirements
+public typealias Showcase = _ShowcaseBase & _ShowcaseIdentity & _ShowcaseRequirements
 
 /**
  A protocol defining the showcase identity. Annotating it with `@objc` make it

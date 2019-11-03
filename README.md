@@ -107,6 +107,34 @@ static var presentationMode: ShowcasePresentationMode { get }
 ```
 By default, showcase are pushed to the current navigation controller. But sometimes you need to control presentation and dismiss. So you can change the `presentationMode` to `.modal`. But you will have to handle the dismiss of your showcase.
 
+## SwiftUI Previews
+
+SwiftUI Previews and Showcases work so well together. You can leverage the power of SwiftUI Previews during the development phase, and make these previews available in your app as Showcases so everyone in your team (QA, Product Managers, etc...) can try them once you're done.
+
+For that, you just have to make your Showcase conforming to `PreviewProvider` and... that's all.
+```swift
+import SwiftUI
+final class MyAwesomeFeatureShowcase : Showcase, PreviewProvider {
+    //...
+}
+```
+
+But you can also implement your own `previews` override so you can run your showcase on multiple environments at once.
+```swift
+import SwiftUI
+final class MyAwesomeFeatureShowcase : Showcase, PreviewProvider {
+    //...
+    
+    @available(iOS 13, *)
+    static var previews: some View {
+        Group {
+            preview(on: "iPhone SE")
+            preview(on: "iPhone X")
+        }
+    }
+}
+```
+
 ## License
 
 This framework is provided under the MIT license.

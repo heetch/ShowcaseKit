@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		52D6D9871BEFF229002C0205 /* ShowcaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* ShowcaseKit.framework */; };
+		8467B337236F2FF500EAEAB9 /* Showcase+SwiftUIPreviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467B336236F2FF500EAEAB9 /* Showcase+SwiftUIPreviews.swift */; };
 		87341559232680E9008CC7C2 /* Array+Showcase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87341554232680E7008CC7C2 /* Array+Showcase.swift */; };
 		8734155A232680E9008CC7C2 /* ShowcasePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87341555232680E7008CC7C2 /* ShowcasePath.swift */; };
 		8734155B232680E9008CC7C2 /* ShowcasesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87341556232680E8008CC7C2 /* ShowcasesViewModel.swift */; };
@@ -32,6 +33,8 @@
 /* Begin PBXFileReference section */
 		52D6D97C1BEFF229002C0205 /* ShowcaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShowcaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9861BEFF229002C0205 /* ShowcaseKit-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ShowcaseKit-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8467B336236F2FF500EAEAB9 /* Showcase+SwiftUIPreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Showcase+SwiftUIPreviews.swift"; sourceTree = "<group>"; };
+		8467B33A236F30DA00EAEAB9 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
 		87341554232680E7008CC7C2 /* Array+Showcase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Showcase.swift"; sourceTree = "<group>"; };
 		87341555232680E7008CC7C2 /* ShowcasePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowcasePath.swift; sourceTree = "<group>"; };
 		87341556232680E8008CC7C2 /* ShowcasesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowcasesViewModel.swift; sourceTree = "<group>"; };
@@ -73,6 +76,7 @@
 				8933C7831EB5B7EB000D00A4 /* Tests */,
 				52D6D99C1BEFF38C002C0205 /* Configs */,
 				52D6D97D1BEFF229002C0205 /* Products */,
+				8467B339236F30DA00EAEAB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +98,14 @@
 				DD7502731C68FC20006590AF /* Tests */,
 			);
 			path = Configs;
+			sourceTree = "<group>";
+		};
+		8467B339236F30DA00EAEAB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8467B33A236F30DA00EAEAB9 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8797E38C234B067400A342DC /* ShowcaseKit */ = {
@@ -120,6 +132,7 @@
 			children = (
 				87341557232680E8008CC7C2 /* Showcase.swift */,
 				87341555232680E7008CC7C2 /* ShowcasePath.swift */,
+				8467B336236F2FF500EAEAB9 /* Showcase+SwiftUIPreviews.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -283,6 +296,7 @@
 				87341559232680E9008CC7C2 /* Array+Showcase.swift in Sources */,
 				8734155A232680E9008CC7C2 /* ShowcasePath.swift in Sources */,
 				8933C7851EB5B820000D00A4 /* ShowcasesSettings.swift in Sources */,
+				8467B337236F2FF500EAEAB9 /* Showcase+SwiftUIPreviews.swift in Sources */,
 				87C018022326EA610007135B /* ShowcaseDescription.swift in Sources */,
 				8734155C232680E9008CC7C2 /* Showcase.swift in Sources */,
 				8734155B232680E9008CC7C2 /* ShowcasesViewModel.swift in Sources */,
@@ -438,13 +452,12 @@
 				);
 				INFOPLIST_FILE = Configs/ShowcaseKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				ONLY_ACTIVE_ARCH = NO;
 				OTHER_SWIFT_FLAGS = "-D SHOWCASES_AVAILABLE";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ShowcaseKit.ShowcaseKit-iOS";
 				PRODUCT_NAME = ShowcaseKit;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -462,11 +475,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Configs/ShowcaseKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ShowcaseKit.ShowcaseKit-iOS";
 				PRODUCT_NAME = ShowcaseKit;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 			};

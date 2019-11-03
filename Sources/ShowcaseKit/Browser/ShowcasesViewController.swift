@@ -166,12 +166,10 @@ public class ShowcasesViewController: UITableViewController {
         }
 
         switch showcase.presentationMode {
+        case .automatic where viewController is UINavigationController:
+            navigationController.present(viewController, animated: true)
         case .automatic:
-            if viewController is UINavigationController {
-                navigationController.present(viewController, animated: true)
-            } else {
-                navigationController.pushViewController(viewController, animated: true)
-            }
+            navigationController.pushViewController(viewController, animated: true)
         case .modal:
             navigationController.present(viewController, animated: true)
         }
