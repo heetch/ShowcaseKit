@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ShowcaseKit"
-  s.version      = "1.0.0"
+  s.version      = "1.1.0"
   s.summary      = "Embrace Showcase Driven Development with ease :)"
   s.description  = <<-DESC
    ShowcaseKit is a way to embed easily some view controllers in your application in order to showcase what you've done.
