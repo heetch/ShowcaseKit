@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ShowcaseKit"
-  s.version      = "1.1.0"
+  s.version      = "1.1.1"
   s.summary      = "Embrace Showcase Driven Development with ease :)"
   s.description  = <<-DESC
    ShowcaseKit is a way to embed easily some view controllers in your application in order to showcase what you've done.
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Jérôme Alves" => "j.alves@me.com" }
   s.social_media_url   = ""
-  s.ios.deployment_target = "8.0"
+  s.ios.deployment_target = "11.0"
   s.source       = { :git => "https://github.com/heetch/ShowcaseKit.git", :tag => s.version.to_s }
   s.source_files  = "Sources/**/*"
   s.swift_version = '5.0'

@@ -19,8 +19,8 @@ final class LabelShowcase: Showcase, PreviewProvider {
 
         let label = UILabel()
         label.text = "This is a Showcase and a Preview!"
-
-        viewController.view.backgroundColor = .white
+        
+        viewController.view.backgroundColor = .systemBackground
         viewController.view.addSubview(label)
 
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -30,11 +30,10 @@ final class LabelShowcase: Showcase, PreviewProvider {
         return viewController
     }
 
-    @available(iOS 13, *)
     static var previews: some View {
         Group {
             preview(on: "iPhone SE")
-            preview(on: "iPhone X")
+            preview(on: "iPhone X").environment(\.colorScheme, .dark)
         }
     }
 }
