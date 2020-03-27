@@ -21,10 +21,7 @@ extension _ShowcaseIdentity where Self: PreviewProvider {
             .edgesIgnoringSafeArea(.all)
             .previewDevice(previewDevice)
     }
-    
-    public static var previews: some View {
-        preview()
-    }
+
 }
 
 @available(iOS 13, *)

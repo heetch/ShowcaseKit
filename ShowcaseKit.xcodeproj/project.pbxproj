@@ -33,8 +33,10 @@
 /* Begin PBXFileReference section */
 		52D6D97C1BEFF229002C0205 /* ShowcaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShowcaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9861BEFF229002C0205 /* ShowcaseKit-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ShowcaseKit-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8467B336236F2FF500EAEAB9 /* Showcase+SwiftUIPreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Showcase+SwiftUIPreviews.swift"; sourceTree = "<group>"; };
+		75506A11242DF5EB0085CA00 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		75506A12242DF6810085CA00 /* ShowcaseKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ShowcaseKit.podspec; sourceTree = "<group>"; };
 		75A7029823BE4BA6009E3F96 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		8467B336236F2FF500EAEAB9 /* Showcase+SwiftUIPreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Showcase+SwiftUIPreviews.swift"; sourceTree = "<group>"; };
 		8467B33A236F30DA00EAEAB9 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
 		87341554232680E7008CC7C2 /* Array+Showcase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Showcase.swift"; sourceTree = "<group>"; };
 		87341555232680E7008CC7C2 /* ShowcasePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowcasePath.swift; sourceTree = "<group>"; };
@@ -73,6 +75,8 @@
 		52D6D9721BEFF229002C0205 = {
 			isa = PBXGroup;
 			children = (
+				75506A11242DF5EB0085CA00 /* README.md */,
+				75506A12242DF6810085CA00 /* ShowcaseKit.podspec */,
 				8933C7811EB5B7E0000D00A4 /* Sources */,
 				8933C7831EB5B7EB000D00A4 /* Tests */,
 				52D6D99C1BEFF38C002C0205 /* Configs */,
