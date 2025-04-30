@@ -1,4 +1,4 @@
-# ShowcaseKit
+# The ShowcaseKit library has been archived and is no longer under active maintenance
 
 ![pod](https://img.shields.io/cocoapods/v/ShowcaseKit.svg)
 
